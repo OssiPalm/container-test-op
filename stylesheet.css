@@ -1,0 +1,62 @@
+html{
+    font-family: monospace;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 0.5fr repeat(2, 1fr) 0.5fr;
+    grid-template-rows: 0.3fr repeat(3, 1fr) 0.1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    height: 100vh;
+    text-align: center;
+    }
+
+    .banner-div { grid-area: 1 / 2 / 2 / 4; 
+     
+    }
+    .content-div1 { grid-area: 2 / 2 / 3 / 4; 
+        border: 1px;
+        border-style: solid;
+        margin: 10px;
+        padding: 10px;
+    }
+    .content-div2 { grid-area: 3 / 2 / 5 / 3; 
+        border: 1px;
+        border-style: solid;
+        margin: 10px;
+        padding: 10px;
+    }
+    .content-div3 {
+         grid-area: 3 / 3 / 5 / 4;
+         border: 1px;
+         border-style: solid;
+         margin: 10px;
+         padding: 10px;
+    }
+    .footer-div { grid-area: 5 / 2 / 6 / 4; 
+
+    }
+    .left-div { grid-area: 1 / 1 / 6 / 2; 
+    
+    }
+    .right-div  { grid-area: 1 / 4 / 6 / 5; 
+    
+    }
+
+    .alt-parent {
+        display: grid;
+        grid-template-columns: 0.5fr repeat(2, 1fr) 0.5fr;
+        grid-template-rows: 0.3fr repeat(3, 1fr) 0.1fr;
+        grid-column-gap: 2px;
+        grid-row-gap: 2px;
+        height: 100vh;
+        text-align: center;
+        }
+        
+        .alt-div { grid-area: 2 / 2 / 5 / 4;  background-color: bisque;}
+
+        .ascii-art {
+        font-family: monospace;
+        white-space: pre;
+        }
